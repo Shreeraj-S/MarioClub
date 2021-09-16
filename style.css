@@ -1,0 +1,251 @@
+body, header, h1, h2, img, ul, li, p, a{
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma;
+    overflow-x:hidden;
+}
+
+header{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: #F63232;
+    height: 110px;
+    text-align: center;
+}
+
+header h1{
+    border: 8px solid white;
+    padding: 5px 20px;
+    margin: 20px;
+    border-radius: 40px;
+    display: inline-block;
+    color: white;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+}
+
+.banner img{
+    display: block;
+    max-width: 100%;
+}
+
+.banner .welcome{   
+    background-color: #FEB614;
+    position: absolute;
+    top: 30%;
+    left: 0;
+}
+
+.banner h2{
+    color:  white;
+    padding: 25px;
+    font-size: 66px;
+}
+
+.banner h2 span{
+    font-size: 1.3em;
+}
+
+.navigation{
+    position: sticky;
+    top: 108px;
+}
+
+.navigation ul{
+    display: block;
+    background-color:#F4F4F4;
+    max-width: 100%;
+    padding: 15px;
+    white-space: nowrap;
+}
+
+.navigation ul li{
+    text-align: center;
+    width: 25%;
+    display: inline-block;
+}
+
+.navigation ul li a{
+    color: #4B4B4B;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.navigation li.join a{
+    color: #F63232;
+}
+
+.main-post{
+    margin: 40px 80px;
+    padding: 30px;
+}
+
+.main-post h2{
+    padding: 20px 0;
+    color: #F63232;
+    font-size: 45px;
+}
+
+.main-post p{
+    color: #4B4B4B;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.main-post div{
+    max-width: 100%;
+    white-space: nowrap;
+    padding: 20px 0px;
+}
+
+.main-post div img{
+    text-align: center;
+    display: inline-block;
+    max-width: 50%;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+section.join{
+    background-color: #F4F4F4;
+    margin: 30px 0px;
+    padding: 60px 20px;
+    text-align: center; 
+}
+
+section.join .text{
+    width: 100%;
+    margin: 20px;
+}
+
+section.join h2{
+    color: #4B4B4B;
+    font-size: 40px;
+    margin: 10px;
+}
+
+section.join p{
+    font-size: 18px;
+    margin: 15px;
+}
+
+.email{
+    display: inline-block;
+    margin: 15px;
+    padding: 10px 20px;
+    font-size: 25px;
+    border: 4px solid white;
+    border-radius: 40px;
+}
+
+.footer{
+    background-color:#F63232;
+    padding: 30px;
+    text-align: center;
+}
+.footer p{
+    font-size: 18px;
+    color: white;
+}
+.navigation ul li:hover{
+    text-decoration: underline;
+}
+
+.main-post img:hover{
+    position: relative;
+    bottom: 4px;
+    left: 2px
+}
+
+.email:focus{
+    border: 4px dashed #4B4B4B;
+    outline: none;
+}
+
+.join form input:valid{
+    border: 4px solid #71d300;
+}
+
+.main-post article p::first-line{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 1100px) {
+    .banner h2{
+        padding: 20px;
+        font-size: 50px;
+    } 
+}
+
+@media screen and (max-width: 800px) {    
+    .banner h2{
+        padding: 15px;
+        font-size: 40px;
+    }
+
+    .navigation ul li a{
+        font-size: 20px;
+    }
+
+    .main-post div{
+        padding: 20px 0px;
+        White-space: normal;
+    }
+    
+    .main-post div img{
+        display: block;
+        max-width: 100%;
+        padding: 40px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .banner .welcome{   
+        position: relative;
+    }
+    
+    .banner h2{
+        padding: 15px;
+        font-size: 30px;
+    }
+
+    .banner h2 br{
+        display: none;
+    }
+    
+    .banner h2 span{
+        font-size: 1em;
+    }
+    header{
+        position: relative;
+    }
+
+    .navigation{
+        position: sticky;
+        top: .1px;
+    }
+    
+    .navigation ul{
+        padding: 15px;
+    }
+    
+    .navigation ul li{
+        text-align: left;
+        display: block;
+        width: 100%;
+    }
+    
+    .navigation ul li a{
+        font-size: 27px;
+    }
+
+    .main-post{
+        margin: 20px auto;
+        padding: 30px;
+    }
+}
